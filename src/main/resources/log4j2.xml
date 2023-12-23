@@ -9,19 +9,10 @@
         <Properties>
             <Property name="noConsoleNoAnsi">false</Property>
         </Properties>
-        <File name="FILE_APPENDER" fileName="logs/app.log">
-            <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
-            </PatternLayout>
-        </File>
-        <Async name="ASYNC_FILE_APPENDER">
-            <AppenderRef ref="FILE_APPENDER"/>
-        </Async>
     </Appenders>
     <Loggers>
         <Root level="info">
             <AppenderRef ref="STDOUT" />
-            <AppenderRef ref="ASYNC_FILE_APPENDER"/>
         </Root>
     </Loggers>
 </Configuration>
