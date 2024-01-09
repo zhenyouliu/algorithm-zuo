@@ -1,4 +1,4 @@
-package com.lzy.class03;
+package com.lzy.basic.class03;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static com.lzy.utils.AlgoUtil.generateRandomArray;
-import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 class Code03_PartitionAndQuickSortTest {

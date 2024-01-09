@@ -1,4 +1,4 @@
-package com.lzy.class03;
+package com.lzy.basic.class03;
 
 import cn.hutool.core.lang.Assert;
 import lombok.extern.slf4j.Slf4j;
