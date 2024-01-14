@@ -14,7 +14,7 @@ public class AlgoUtil {
     }
 
     //    生成随机数组。最大长度、最大值均为随机值
-    public static int[] generateRandomArray(int maxSize, int maxVal) {
+    public static int[] generateRandomIntArray(int maxSize, int maxVal) {
         int actualSize = new Random().nextInt(maxSize) + 1;
         int[] arr = new int[actualSize];
         log.info("生成的数组的实际长度:{}", actualSize);
@@ -24,6 +24,17 @@ public class AlgoUtil {
         }
         log.info("生成的随机数组为：{}", arr);
         return arr;
+    }
+
+    public static String generateRandomParenthesesStr(int maxSize) {
+        char[] arr = {'(', ')'};
+        Random random = new Random();
+        int strLength = random.nextInt(maxSize) + 1;
+        char[] str = new char[strLength];
+        for(int i = 0; i < strLength; i++) {
+            str[i] = arr[random.nextInt(2)];
+        }
+        return String.valueOf(str);
     }
 
 }

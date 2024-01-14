@@ -8,15 +8,13 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @Slf4j
 class Code01_CordCoverMaxPointTest {
     private Code01_CordCoverMaxPoint code01 = new Code01_CordCoverMaxPoint();
 
     @Test
     void testCalcMaxCoverPoints() {
-        int[] arr = AlgoUtil.generateRandomArray(30, 100);
+        int[] arr = AlgoUtil.generateRandomIntArray(30, 100);
         Arrays.sort(arr);
         int k = new Random().nextInt(20) + 1;
         int coverPoints = code01.calcMaxCoverPoints(arr, k);
@@ -36,7 +34,7 @@ class Code01_CordCoverMaxPointTest {
 
     @Test
     void testBinarySearch() {
-        int[] arr = AlgoUtil.generateRandomArray(30, 100);
+        int[] arr = AlgoUtil.generateRandomIntArray(30, 100);
         Arrays.sort(arr);
         int k = new Random().nextInt(20) + 1;
         int nearestIndexLessThanK = code01.getNearestIndexLessThanK(arr, 0, arr.length - 1, k);
