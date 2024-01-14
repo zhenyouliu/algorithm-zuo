@@ -37,4 +37,15 @@ public class AlgoUtil {
         return String.valueOf(str);
     }
 
+    public static String generateRGStr(int maxSize) {
+        char[] arr = {'R', 'G'};
+        Random random = new Random();
+        int strLength = random.nextInt(maxSize) + 1;
+        char[] str = new char[strLength];
+        for(int i = 0; i < strLength; i++) {
+            str[i] = arr[random.nextInt(2)];
+        }
+        return String.valueOf(str);
+    }
+
 }
